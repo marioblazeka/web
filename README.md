@@ -2,7 +2,7 @@
 Osobna Web stranica - one page
 
 
-# marioblazeka.github.io Projekt moje osobne web stranice: <a target="_blank" href="https://marioblazeka.github.io/web">marioblazeka.github.io/web/a>
+# marioblazeka.github.io Projekt moje osobne web stranice: <a target="_blank" href="https://marioblazeka.github.io/web">[marioblazeka.github.io/web](https://github.com/marioblazeka/web) /a>
 
 //Naziv aplikacije i sastav vašeg tima
 # Fakultet informatike u Puli ([link na web](https://fipu.unipu.hr/))
