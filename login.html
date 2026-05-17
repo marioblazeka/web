@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prijava – Privatni prostor</title>
+<meta name="description" content="Prijava na privatni dio web stranice">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <a id="pojo-a11y-skip-content" class="pojo-skip-link" tabindex="1" accesskey="s" href="#main-content" role="link">Preskoči na sadržaj</a>
+
+    <main id="main-content" class="main-content">
+        <header class="header">
+            <h1>🔐 Prijava na sustav</h1>
+            <p class="tagline">Privatni prostor za registrirane korisnike</p>
+        </header>
+
+        <section class="section login-section">
+            
+            
+            <div id="error-message" class="error-message" style="display:none">
+                <strong>⚠️ Podaci nisu točni!</strong>
+                <p>Molimo provjerite korisničko ime i lozinku.</p>
+            </div>
+
+            
+            <div id="success-message" class="success-message" style="display:none">
+                <strong>✅ Uspješno ste se ulogirani!</strong>
+                <p>Preusmjeravanje na dashboard...</p>
+            </div>
+
+            
+            <form id="login-form" class="login-form">
+                
+                <div class="form-group">
+                    <label for="username">Korisničko ime ili email:</label>
+                    <input 
+                        type="text" 
+                        id="username" 
+                        name="username" 
+                        required 
+                        placeholder="npr. mario ili mario@example.com"
+                        aria-label="Korisničko ime"
+                        autoComplete="username"
+                     />
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Lozinka:</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        required 
+                        placeholder="password"
+                        aria-label="Lozinka"
+                        autoComplete="current-password"
+                     />
+                </div>
+
+                <div class="form-group checkbox">
+                    <input 
+                        type="checkbox" 
+                        id="remember" 
+                        name="remember" 
+                     />
+                    <label for="remember">Zapamti me na ovom uređaju (30 dana)</label>
+                </div>
+
+                <button type="submit" class="btn-submit">Prijava</button>
+            </form>
+
+            
+            <div class="demo-info">
+                <h3>🧪 Testni podaci:</h3>
+                <ul>
+                    <li><strong>Korisničko ime:</strong> mario</li>
+                    <li><strong>Lozinka:</strong>********</li>
+                </ul>
+                <p style="margin-top:1rem;font-size:0.9rem;color:#666">
+                    ℹ️ <em>Napomena: Pokušajte ponovno sa točnim podacima.</em>
+                </p>
+            </div>
+
+            
+            <p class="login-footer">
+                <a href="index.html">← Povratak na početnu stranicu</a>
+            </p>
+        </section>
+    </main>
+
+    
+    
+
+    <footer class="footer">
+        <p><small>&copy; 2026. Privatni prostor. Sva prava zadržana.</small></p>
+    </footer>
+
+    
+    
+    
+      <ExternalScripts srcs={["/js/login.js", "/js/accessibility-widget.js"]} />
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Obavijest o kolačićima" style="display:none">
+  <div class="cookie-container">
+    <div class="cookie-title">Ove stranice koriste kolačiće</div>
+    <div class="cookie-desc">Ova web stranica koristi kolačiće radi poboljšanja vašeg iskustva pregledavanja.
+      <a href="index.html#kolacici-section" class="cookie-more">Saznaj više</a>
+    </div>
+    <div class="cookie-buttons">
+      <button id="accept-cookies" class="cookie-btn accept-btn">Prihvaćam</button>
+      <button id="reject-cookies" class="cookie-btn reject-btn">Ne prihvaćam</button>
+    </div>
+  </div>
+</div>
+<button id="backToTop" class="back-to-top" aria-label="Vrati se na vrh stranice">↑</button>
+
+<div id="stats-widget" class="stats-widget">
+  <div class="stats-toggle" title="Statistika">📊</div>
+  <div class="stats-panel" style="display:none">
+    <div class="stats-header"><h3>📈 Statistika portala</h3><button class="stats-close" aria-label="Zatvori">✕</button></div>
+    <div class="stats-content">
+      <div class="stat-item"><span class="stat-label">👥 Ukupno posjetitelja:</span><span class="stat-value" id="total-visitors">0</span></div>
+      <div class="stat-item"><span class="stat-label">👤 Trenutno online:</span><span class="stat-value" id="current-visitors">0</span></div>
+      <div class="stat-item"><span class="stat-label">📅 Posjetitelja danas:</span><span class="stat-value" id="today-visitors">0</span></div>
+      <div class="stat-item"><span class="stat-label">⏱️ Učitavanja stranice:</span><span class="stat-value" id="page-loads">0</span></div>
+      <div class="stat-item"><span class="stat-label">⌚ Vrijeme na portalu:</span><span class="stat-value" id="visit-time">0m 0s</span></div>
+      <div class="stat-item"><span class="stat-label">🌐 Vremenski pojas:</span><span class="stat-value" id="timezone">HR</span></div>
+      <div class="stat-item"><span class="stat-label">📱 Uređaj:</span><span class="stat-value" id="device-type">Desktop</span></div>
+      <div class="stat-item"><span class="stat-label">💻 Browser:</span><span class="stat-value" id="browser-type">Chrome</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat-item"><span class="stat-label">🔗 Zadnja posjeta:</span><span class="stat-value" id="last-visit">Sada</span></div>
+      <div class="stat-item"><span class="stat-label">🎯 Česta stranica:</span><span class="stat-value" id="most-viewed">-</span></div>
+    </div>
+  </div>
+</div>
+
+<script src="js/login.js"></script>
+<script src="js/index-stats.js"></script>
+<script src="js/index-cookies.js"></script>
+<script src="js/accessibility-widget.js"></script>
+</body>
+</html>
