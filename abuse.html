@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prijava zlouporabe / Report Abuse — Mario Blažeka</title>
+<meta name="description" content="Prijavite neprikladan sadržaj, phishing, kršenje autorskih ili žigovnih prava.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<main id="main-content" class="main-content" tabindex="-1">
+  <header class="header hero-section">
+    <h1>🚨 Prijava zlouporabe · Report Abuse</h1>
+    <p style="margin-top:0.5rem"><a href="index.html" class="btn-link">← Početna / Home</a></p>
+  </header>
+  <section class="section" aria-labelledby="abuse-title">
+    <h2 id="abuse-title">Prijava zlouporabe i kršenja prava</h2>
+    <p><strong>Hrvatski:</strong> Predan sam sprječavanju zlouporabe i kršenja prava na ovoj stranici. Možete prijaviti svaki neprikladan sadržaj objavljen na ovom portalu. Svaka prijava se ozbiljno razmatra i obrađuje u najkraćem mogućem roku.</p>
+    <p><strong>English:</strong> I am committed to preventing abuse and infringement of rights on this website. You can report any inappropriate content published here. Every report is reviewed and processed as quickly as possible.</p>
+    <p>Odaberite vrstu prijave u nastavku. Po zaprimanju prijave kreira se jedinstveni ID slučaja koji se može koristiti za praćenje statusa. Obrada obično traje <strong>do 3 radna dana</strong>, ovisno o složenosti.<br><em>Choose the type of report below. Upon receipt a unique ticket ID is created to track the report. Processing usually takes up to 3 business days, depending on the case.</em></p>
+  </section>
+  <section class="section" aria-label="Vrste prijava">
+    <div class="abuse-grid">
+    <article class="abuse-card">
+      <div class="abuse-icon" aria-hidden="true">🎣</div>
+      <h3 class="abuse-title">Phishing ili Spam<span class="abuse-title-en">Phishing or Spam</span></h3>
+      <p class="abuse-desc">Prijavite sumnjive poruke, lažne obrasce ili neželjenu poštu.</p>
+      <p class="abuse-desc abuse-desc-en"><em>Report suspicious messages, fake forms or unsolicited mail.</em></p>
+      <a class="abuse-btn" href="mailto:mario@example.com?subject=Prijava%3A%20Phishing%20/%20Spam">Pošalji prijavu / Send a Report</a>
+    </article>
+    <article class="abuse-card">
+      <div class="abuse-icon" aria-hidden="true">©️</div>
+      <h3 class="abuse-title">Kršenje autorskih prava<span class="abuse-title-en">Copyright Infringement</span></h3>
+      <p class="abuse-desc">Sadržaj koji koristi vaš autorski materijal bez dopuštenja.</p>
+      <p class="abuse-desc abuse-desc-en"><em>Content that uses your copyrighted material without permission.</em></p>
+      <a class="abuse-btn" href="mailto:mario@example.com?subject=Prijava%3A%20Kr%C5%A1enje%20autorskih%20prava">Pošalji prijavu / Send a Report</a>
+    </article>
+    <article class="abuse-card">
+      <div class="abuse-icon" aria-hidden="true">™️</div>
+      <h3 class="abuse-title">Kršenje žiga<span class="abuse-title-en">Trademark Infringement</span></h3>
+      <p class="abuse-desc">Neovlaštena uporaba zaštićenog imena, znaka ili logotipa.</p>
+      <p class="abuse-desc abuse-desc-en"><em>Unauthorized use of a protected name, mark or logo.</em></p>
+      <a class="abuse-btn" href="mailto:mario@example.com?subject=Prijava%3A%20Kr%C5%A1enje%20%C5%BEiga">Pošalji prijavu / Send a Report</a>
+    </article>
+    <article class="abuse-card">
+      <div class="abuse-icon" aria-hidden="true">🚫</div>
+      <h3 class="abuse-title">Općenita zlouporaba<span class="abuse-title-en">General Abuse</span></h3>
+      <p class="abuse-desc">Uvredljiv, štetan ili na bilo koji drugi način neprikladan sadržaj.</p>
+      <p class="abuse-desc abuse-desc-en"><em>Offensive, harmful or otherwise inappropriate content.</em></p>
+      <a class="abuse-btn" href="mailto:mario@example.com?subject=Prijava%3A%20Op%C4%87enita%20zlouporaba">Pošalji prijavu / Send a Report</a>
+    </article>
+    </div>
+  </section>
+  <footer class="footer"><p>© 2026 Mario Blažeka — Kolegij: Web aplikacije</p></footer>
+</main>
+
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Obavijest o kolačićima" style="display:none">
+  <div class="cookie-container">
+    <div class="cookie-title">Ove stranice koriste kolačiće</div>
+    <div class="cookie-desc">Ova web stranica koristi kolačiće radi poboljšanja vašeg iskustva pregledavanja.
+      <a href="index.html#kolacici-section" class="cookie-more">Saznaj više</a>
+    </div>
+    <div class="cookie-buttons">
+      <button id="accept-cookies" class="cookie-btn accept-btn">Prihvaćam</button>
+      <button id="reject-cookies" class="cookie-btn reject-btn">Ne prihvaćam</button>
+    </div>
+  </div>
+</div>
+<button id="backToTop" class="back-to-top" aria-label="Vrati se na vrh stranice">↑</button>
+
+<div id="stats-widget" class="stats-widget">
+  <div class="stats-toggle" title="Statistika">📊</div>
+  <div class="stats-panel" style="display:none">
+    <div class="stats-header"><h3>📈 Statistika portala</h3><button class="stats-close" aria-label="Zatvori">✕</button></div>
+    <div class="stats-content">
+      <div class="stat-item"><span class="stat-label">👥 Ukupno posjetitelja:</span><span class="stat-value" id="total-visitors">0</span></div>
+      <div class="stat-item"><span class="stat-label">👤 Trenutno online:</span><span class="stat-value" id="current-visitors">0</span></div>
+      <div class="stat-item"><span class="stat-label">📅 Posjetitelja danas:</span><span class="stat-value" id="today-visitors">0</span></div>
+      <div class="stat-item"><span class="stat-label">⏱️ Učitavanja stranice:</span><span class="stat-value" id="page-loads">0</span></div>
+      <div class="stat-item"><span class="stat-label">⌚ Vrijeme na portalu:</span><span class="stat-value" id="visit-time">0m 0s</span></div>
+      <div class="stat-item"><span class="stat-label">🌐 Vremenski pojas:</span><span class="stat-value" id="timezone">HR</span></div>
+      <div class="stat-item"><span class="stat-label">📱 Uređaj:</span><span class="stat-value" id="device-type">Desktop</span></div>
+      <div class="stat-item"><span class="stat-label">💻 Browser:</span><span class="stat-value" id="browser-type">Chrome</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat-item"><span class="stat-label">🔗 Zadnja posjeta:</span><span class="stat-value" id="last-visit">Sada</span></div>
+      <div class="stat-item"><span class="stat-label">🎯 Česta stranica:</span><span class="stat-value" id="most-viewed">-</span></div>
+    </div>
+  </div>
+</div>
+
+<script src="js/index-stats.js"></script>
+<script src="js/index-cookies.js"></script>
+<script src="js/accessibility-widget.js"></script>
+</body>
+</html>
